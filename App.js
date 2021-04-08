@@ -22,6 +22,7 @@ export default class extends React.Component {
       // api 앞에 http:// 붙이기
       `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`
     );
+    
     this.setState({ 
       isLoading: false, 
       condition: weather[0].main,
